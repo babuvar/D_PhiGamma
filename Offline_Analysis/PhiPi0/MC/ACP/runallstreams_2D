@@ -1,0 +1,31 @@
+#! /bin/bash
+
+cd Stream0/2D
+root -l simfit_2D.C
+cd ../..
+
+cd Stream1/2D
+root -l simfit_2D.C
+cd ../..
+
+cd Stream2/2D
+root -l simfit_2D.C
+cd ../..
+
+cd Stream3/2D
+root -l simfit_2D.C
+cd ../..
+
+cd Stream4/2D
+root -l simfit_2D.C
+cd ../..
+
+cd Stream5/2D
+root -l simfit_2D.C
+cd ../..
+
+
+
+
+
+

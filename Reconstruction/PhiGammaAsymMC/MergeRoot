@@ -1,0 +1,13 @@
+#! /bin/tcsh -f
+foreach k (0 1 2 3 4 5)
+
+cd hbook$k/root
+
+hadd merged$k.root *op.root
+
+cd ..
+cd ..
+
+end
+
+

@@ -1,0 +1,17 @@
+Pi veto
+0.482517	60.86	 best veto = 0.055
+
+
+Eta veto
+0.477031	58.085	 best veto = 0.39
+
+
+e9/e25
+0.443152	55.4	 best veto = 0.941
+
+
+2-D
+0.430995	30.015	41	 best E(Gam) = 610MeV	 best P*(D*) = 3.1GeV
+
+
+

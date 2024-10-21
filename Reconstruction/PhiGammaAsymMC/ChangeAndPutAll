@@ -1,0 +1,12 @@
+#! /bin/tcsh -f
+foreach k (hbook0 hbook1 hbook2 hbook3 hbook4 hbook5)
+
+cd $k
+
+./ChangeAndPut
+
+cd ..
+
+end
+
+

@@ -1,0 +1,31 @@
+#! /bin/bash
+
+cd Stream0
+root -l simfit_1D.C
+cd ..
+
+cd Stream1
+root -l simfit_1D.C
+cd ..
+
+cd Stream2
+root -l simfit_1D.C
+cd ..
+
+cd Stream3
+root -l simfit_1D.C
+cd ..
+
+cd Stream4
+root -l simfit_1D.C
+cd ..
+
+cd Stream5
+root -l simfit_1D.C
+cd ..
+
+
+
+
+
+

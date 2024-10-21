@@ -1,0 +1,17 @@
+#! /bin/tcsh -f
+
+foreach i ( *expon_res* )
+
+h2root $i
+#mv 4s_data_exp${i}_op.root root/4s_data_exp${i}_op.root
+       
+end
+
+foreach i ( *expon_res*root )
+
+mv $i root4s
+
+end
+
+
+

@@ -1,0 +1,19 @@
+#! /bin/tcsh -f
+
+#foreach stream (0 1 2 3 4 5)
+
+foreach stream (2)
+
+foreach i (uds)
+
+foreach j (11)
+
+bsub -q b_index ./script.csh $i 1$stream $j $stream
+#./testscript.csh $i 1$stream $j $stream
+
+end
+
+end
+
+end
+

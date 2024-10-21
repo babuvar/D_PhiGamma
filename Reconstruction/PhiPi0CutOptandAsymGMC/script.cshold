@@ -1,0 +1,36 @@
+#! /bin/tcsh -f
+                        
+cd /gpfs/fs02/belle/users/varghese/PhiPi0CutOptandAsym
+
+source ~/Env/cshrc.pre
+setenv BASF_USER_INIT geant_init
+
+setenv FILE dpp
+
+
+basf <<EOF >! ./log/log_$FILE.out
+
+path create main
+path create Skim
+
+module register fix_mdst d0rad
+path add_module main d0rad
+path add_module Skim d0rad
+
+path add_condition main >:0:Skim
+path add_condition main =<:0:KILL
+
+initialize
+
+histogram define ./$FILE.hbk  
+
+process_dir /gpfs/home/belle/varghese/mcproduzh/gsim/mdst/D0toPhiPi0 
+terminate 
+
+EOF
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+6 x MC
+Nsig = 401
+
+
+Data
+Nsig = 36.4
+
+
+Estimated signal MC to generate
+
+= (6000 x 36.4) / 401 = 545
+

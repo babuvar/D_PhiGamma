@@ -1,0 +1,15 @@
+#! /bin/tcsh -f
+
+foreach i (D0 D0B)
+
+#foreach j (dir1 dir2 dir3)# dir4 dir5)
+
+#bsub -q b_a ./script.cshgold $j $i
+
+#bsub -q b_a ./script.cshgold $i
+
+bsub -q l ./script.cshgold $i
+
+#end
+
+end

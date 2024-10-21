@@ -1,0 +1,38 @@
+#! /bin/tcsh -f
+
+
+
+foreach i (D0toPhiPi0_1M D0BtoPhiPi0_1M)
+
+foreach j (1 2 3 4 5 6 7 8 9 10)
+
+
+#./test.csh $i $j 
+bsub -q b_a ./script.cshold $i $j
+#bsub -q b_index ./script.csh $i 1$stream $j $stream
+
+echo "job $i $j done" >> status.txt
+
+end
+
+end
+
+
+
+#foreach i (D0toPhiGamma_500K D0BtoPhiGamma_500K)
+
+#foreach j (1 2 3 4 5)
+
+
+#./test.csh $i $j 
+#bsub -q b_a ./script.cshold $i $j
+#bsub -q b_index ./script.csh $i 1$stream $j $stream
+
+#echo "job $i $j done" >>  status.txt
+
+#end
+
+#end
+
+
+

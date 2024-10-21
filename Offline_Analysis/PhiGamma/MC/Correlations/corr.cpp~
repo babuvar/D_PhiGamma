@@ -1,0 +1,45 @@
+#include<cmath>
+void corr(){
+
+    TCanvas *c1 = new TCanvas();
+
+
+
+  TChain* chain=new TChain("h1");
+//  chain->Add("DtoPhiGamma_500Kx2.root");
+  chain->Add("DtoPhiGamma_80760.root");
+
+
+
+	c1->cd();
+	h1->Draw("Dstps : Gamenerg","Mygenfla == 1");
+
+/*
+	c1->cd();
+	h1->SetTitle("Plot");
+	h1->SetMarkerColor(kPink);
+	h1->Draw("Dzeromas : Deltam","Mygenfla != 1");
+	h1->SetMarkerColor(kBlue);
+	h1->Draw("Dzeromas : Deltam","Mygenfla == 1","same");*/
+
+/*
+	c1->cd();
+	h1->SetTitle("Plot");
+	h1->SetMarkerColor(kPink);
+	h1->Draw("Deltam : Dzeromas","Mygenfla != 1");
+	h1->SetMarkerColor(kBlue);
+	h1->Draw("Deltam : Dzeromas","Mygenfla == 1","same");
+*/
+
+//	c1->cd();	h1->SetTitle("Plot");
+//	h1->SetMarkerColor(kPink);
+//	h1->Draw("Gamenerg : Dstps","Mygenfla != 1");
+//	h1->SetMarkerColor(kBlue);
+//	h1->Draw("Gamenerg : Dstps","Mygenfla == 1");//,"same");
+//	h1->SetTitle("Plot");
+
+
+    gPad->Update();
+
+}
+

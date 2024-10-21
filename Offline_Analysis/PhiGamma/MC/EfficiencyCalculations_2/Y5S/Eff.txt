@@ -1,0 +1,15 @@
+Efficiency loss DeltaM = 0.192362 %
+Efficiency loss M_D = 0.530168 %
+Efficiency loss Mphi = 11.0115 %
+Efficiency loss Prob(Pi) = 47.1615 %
+Efficiency loss Prob(Eta) = 6.32448 %
+Efficiency loss e9/e25 = 7.49273 %
+Efficiency loss 2-D = 51.4216 %
+Efficiency loss |dr| = 0 %
+Efficiency loss |dz| = 0 %
+Efficiency loss K-PID = 0.83044 %
+Efficiency loss Pi-PID = 0.0891433 %
+
+
+
+

@@ -1,0 +1,17 @@
+#! /bin/tcsh -f
+
+foreach i ( *exp5S_on* )
+
+h2root $i
+#mv 4s_data_exp${i}_op.root root/4s_data_exp${i}_op.root
+       
+end
+
+foreach i ( *exp5S_on*root )
+
+mv $i root5s
+
+end
+
+
+
